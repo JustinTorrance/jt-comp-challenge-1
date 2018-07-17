@@ -1,5 +1,3 @@
-# jt-comp-challenge-1
-
 <h1>Static Comp Challenge 1</h1>
 
 #The purpose of this project is to demonstrate proficiency in HTML and CSS. I was required to stick to the layout of the original example. Beyond the layout, I was allowed to employ my own creativity.
