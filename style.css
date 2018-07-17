@@ -1,0 +1,212 @@
+
+.container {
+  font-family: 'Arimo', sans-serif;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-auto-rows: minmax(16.7rem, auto);
+  align-content: center;
+  grid-template-areas: 
+    "justin justin profile portrait portrait"
+    "current-projects education blog portrait portrait"
+    "social-media contact portfolio portrait portrait";
+}
+
+article {
+  /*border: 1px solid;*/
+  border-color: black;
+  color: white;
+  font-size: 1.5rem;
+
+}
+
+.box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.box:hover {
+  opacity: .5;
+}
+
+.fa-chevron-circle-left:hover {
+  opacity: .5;
+  cursor: pointer;
+}
+
+.fa-chevron-circle-right:hover {
+  opacity: .5;
+    cursor: pointer;
+}
+
+.fa-linkedin {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+}
+
+.fa-file-download {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+}
+
+
+
+.circle {
+margin-left: 1rem;
+}
+
+.chevron {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.far:hover {
+  opacity: .5;
+  cursor: pointer;
+}
+
+.fa-circle {
+  font-size: .5rem;
+}
+
+
+
+.justin {
+  grid-area: justin;
+  background-color: #3A8CAA;
+}
+
+.text1 {
+  margin-left: 3rem;
+  margin-top: 3rem;
+  font-size: 2rem;
+  margin-bottom: .5rem;
+}
+
+.text2, .text3 {
+  font-size: .9rem;
+  margin-left: 3rem;
+  margin-bottom: 0;
+  margin-top: .3rem;
+}
+
+section {
+  display: flex;
+}
+
+.justin-resume, .justin-connect {
+  font-size: 1rem;
+  display: flex;
+  flex-direction: wrap;
+
+}
+
+.justin-resume:hover {
+  opacity: .5;
+  cursor: pointer;
+}
+
+.justin-connect:hover {
+  opacity: .5;
+  cursor: pointer;
+}
+
+.profile {
+  grid-area: profile;
+  background-color: #3C6590;
+
+}
+
+.current-projects {
+  grid-area: current-projects;
+  background-color: #53C6F0;
+}
+
+.education {
+  grid-area: education;
+  background-color: #A5B7A5;
+}
+
+.blog {
+  grid-area: blog;
+  background-color: #3A8CAA;
+}
+
+.social-media {
+  grid-area: social-media;
+  background-color: #94B4CC;
+}
+
+.contact {
+  grid-area: contact;
+  background-color: #53C6F0;
+}
+
+.portfolio {
+ grid-area: portfolio;
+ background-color: #94B4CC;
+
+}
+
+.portrait {
+  grid-area: portrait;
+  background-image: url("images/grinell.jpeg");
+  background-size: cover;
+  background-position: 70% 30%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+
+
+}
+
+
+
+
+@media screen and (max-width: 1100px) {
+  .portrait {
+    grid-area: portrait;
+    background-image: url("images/grinell2.jpeg");
+    background-size: cover;
+    background-position: bottom;
+    }
+
+
+  .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(16.7rem, auto); 
+    align-content: center;
+
+    grid-template-areas:
+      "portrait portrait portrait"
+      "justin justin profile" 
+      "current-projects education blog" 
+      "social-media contact portfolio"; 
+  }
+
+}
+
+
+@media screen and (max-width: 500px) {
+  .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: minmax(16.7rem, auto); 
+    align-content: center;
+    grid-template-areas:
+      "portrait portrait"
+      "justin justin" 
+      "profile profile" 
+      "current-projects current-projects"
+      "education education" 
+      "blog blog" 
+      "social-media social-media" 
+      "contact contact" 
+      "portfolio portfolio";
+  }
+}
