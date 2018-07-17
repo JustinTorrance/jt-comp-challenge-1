@@ -15,7 +15,6 @@ article {
   border-color: black;
   color: white;
   font-size: 1.5rem;
-
 }
 
 .box {
@@ -23,7 +22,6 @@ article {
   cursor: pointer;
   display: flex;
   justify-content: center;
-  
 }
 
 .box:hover {
@@ -58,13 +56,10 @@ article {
   margin-top: 1rem;
 }
 
-
-
 .circle {
   display: flex;
   flex-direction: row-reverse;
   margin: 1rem;
-
 }
 
 .chevron {
@@ -83,8 +78,6 @@ article {
 .fa-circle {
   font-size: .5rem;
 }
-
-
 
 .justin {
   background-color: #3A8CAA;
@@ -107,7 +100,6 @@ article {
 
 section {
   display: flex;
- 
 }
 
 .justin-resume, .justin-connect {
@@ -118,7 +110,6 @@ section {
   margin-left: 2rem;
   margin-top: 1rem;
   padding: .1rem .5rem;
-
 }
 
 .justin-resume:hover {
@@ -176,9 +167,6 @@ section {
   justify-content: space-between;
 }
 
-
-
-
 @media screen and (max-width: 1100px) {
   .portrait {
     background-image: url("images/grinell2.jpeg");
@@ -201,9 +189,7 @@ section {
       "current-projects education blog" 
       "social-media contact portfolio"; 
   }
-
 }
-
 
 @media screen and (max-width: 500px) {
   .container {
